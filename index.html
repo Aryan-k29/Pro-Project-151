@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="./base.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="cyan"></a-sky>
+            <a-assets>
+                <a-asset-item 
+                id="carAsset"
+                src="./model/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-entity
+            id="car"
+            gltf-model="#carAsset"
+            position="0 0 0"
+            scale="0.3 0.3 0.3"></a-entity>
+
+            <a-entity position="0 0 0" base></a-entity>
+        </a-scene>
+    </body>
+</html>
